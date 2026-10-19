@@ -179,6 +179,72 @@ h2 {
   padding-bottom: 0;
 }
 
+.project-search-label {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.project-search {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+.project-search-status {
+  min-height: 1.2em;
+  margin: 0 0 0.85rem;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.project-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-card {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  border-radius: 14px;
+  padding: 1.1rem 1.15rem 1rem;
+  box-shadow: var(--shadow);
+}
+
+.project-card[hidden] {
+  display: none;
+}
+
+.project-card h3 {
+  margin: 0 0 0.45rem;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.project-card h3 a {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.project-tech {
+  margin: 0.45rem 0 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 .projects a {
   font-family: "Segoe UI", Tahoma, sans-serif;
   font-weight: 700;
@@ -218,6 +284,12 @@ a:hover {
 
 .site-footer p {
   margin: 0;
+}
+
+.site-footer a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 @media (max-width: 520px) {

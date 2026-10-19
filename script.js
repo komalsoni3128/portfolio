@@ -57,3 +57,33 @@ async function getWeather() {
     }
 }
 weatherButton.addEventListener("click", getWeather);
+
+const projectSearch = document.getElementById("projectSearch");
+const projectCards = document.querySelectorAll(".project-card");
+const projectSearchStatus = document.getElementById("projectSearchStatus");
+
+function filterProjects() {
+    const term = projectSearch.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    projectCards.forEach(function (card) {
+        const haystack = card.textContent.toLowerCase();
+        const matches = term === "" || haystack.includes(term);
+        card.hidden = !matches;
+        if (matches) {
+            visibleCount += 1;
+        }
+    });
+
+    if (term === "") {
+        projectSearchStatus.textContent = "";
+    } else if (visibleCount === 0) {
+        projectSearchStatus.textContent = "No projects match that search.";
+    } else {
+        projectSearchStatus.textContent = visibleCount + " project(s) found.";
+    }
+}
+
+if (projectSearch) {
+    projectSearch.addEventListener("input", filterProjects);
+}

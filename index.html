@@ -35,26 +35,49 @@
 
       <section class="projects" aria-labelledby="projects-heading">
         <h2 id="projects-heading">Projects</h2>
-        <ul>
-          <li>
-            <a href="https://PLACEHOLDER-project-one.example.com">
-              Portfolio Website
-            </a>
-            <p>A portfolio website to showcase my projects and skills.</p>
-          </li>
-          <li>
-            <a href="https://PLACEHOLDER-project-two.example.com">
-              Weather App
-            </a>
-            <p>A weather app to get the weather of a city.</p>
-          </li>
-          <li>
-            <a href="https://PLACEHOLDER-project-three.example.com">
-              Todo List
-            </a>
-            <p>A todo list to manage your tasks.</p>
-          </li>
-        </ul>
+        <label class="project-search-label" for="projectSearch">Search projects by name or technology</label>
+        <input
+          type="search"
+          id="projectSearch"
+          class="project-search"
+          placeholder="Search Python, Quiz, Book, Reading List, Cursor..."
+        />
+        <p id="projectSearchStatus" class="project-search-status" role="status"></p>
+        <div class="project-list">
+          <article class="project-card">
+            <h3>
+              <a
+                href="https://github.com/komalsoni3128/Python-Programs-Collection"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Python Programs Collection
+              </a>
+            </h3>
+            <p>A collection of Python programs demonstrating factorial calculation, Fibonacci sequences, and student dictionaries.</p>
+            <p class="project-tech">Technologies: Python, Git, GitHub</p>
+          </article>
+          <article class="project-card">
+            <h3>Messy Python Code Improvement</h3>
+            <p>A messy Python script improved using AI assistance.</p>
+            <p class="project-tech">Technologies: Python, AI assistance</p>
+          </article>
+          <article class="project-card">
+            <h3>Bug Fixing Using Cursor AI</h3>
+            <p>An incorrect or buggy program identified and corrected using Cursor.</p>
+            <p class="project-tech">Technologies: Cursor AI</p>
+          </article>
+          <article class="project-card">
+            <h3>Interactive Quiz Application</h3>
+            <p>The quiz application developed in Lecture 10.</p>
+            <p class="project-tech">Technologies: HTML, CSS, JavaScript</p>
+          </article>
+          <article class="project-card">
+            <h3>Book Reading List Application</h3>
+            <p>The reading list application developed in Lecture 11. The repository README is intended to include the deployed link.</p>
+            <p class="project-tech">Technologies: HTML, CSS, JavaScript</p>
+          </article>
+        </div>
       </section>
     </main>
     <section id="weather">
@@ -108,7 +131,7 @@
   </section>
 
     <footer class="site-footer">
-      <p>Jaipur, India · komalsoni2004@gmail.com</p>
+      <p>Jaipur, India · komalsoni2004@gmail.com · <a href="https://github.com/komalsoni3128">GitHub</a></p>
     </footer>
     <button id="themeToggle">Switch to Dark Mode</button>
     <script src="script.js"></script>
