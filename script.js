@@ -15,6 +15,7 @@ themeButton.addEventListener("click", function () {
 const cityInput = document.getElementById("cityInput");
 const weatherButton = document.getElementById("weatherButton");
 const weatherResult = document.getElementById("weatherResult");
+weatherButton.addEventListener("click", getWeather);
 async function getWeather() {
 
     const city = cityInput.value.trim();
